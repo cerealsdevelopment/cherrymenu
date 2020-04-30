@@ -3,21 +3,21 @@ Linux Additions for Cherry Trail Devices
 
 I developed this simple python scripts because Cherry Trail devices always do not work Out of the Box.
 
-Prerequisites:
+- Prerequisites:
 
-Python3
+  Python3
 
-How to:
+- How to:
 
-To run the script simply save it wherever you want.
+  1. To run the script simply save it wherever you want.
 
-Open terminal/Konsole and run:
+  2. Open terminal/Konsole and run:
 
-python cherryadditions.py 
+  3. python cherryadditions.py 
 
-You will be presented with a menu with different options:
+  You will be presented with a menu with different options:
 
-- Set Brightness
-- Update the system without upgrading kernel
-- Reboot, shutdown
-- If you press 9 you terminate the script
+  - Set Brightness
+  - Update the system without upgrading kernel (ie Kernel 5.6.6 brought more frequent freezes and reboots than previous kernels. Until 5.7 is released the 5.3.7 works well, the worst issue encounteres the random inability to power on from a suspend)
+  - Reboot, shutdown
+  - If you press 9, you terminate the script
