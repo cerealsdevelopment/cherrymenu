@@ -1,6 +1,6 @@
 import sys
 import os
-# Main Routine
+## Menu
 print("\n  ========_________________________!!!!!!!!!!!!!!!__________________========\n")
 print("\n	                     _=! Cherry Trail Menu !=_\n")
 print("                        Happily brought to you by the Cereals Development\n")
@@ -18,7 +18,7 @@ print("8. Force shutdown")
 print("9. Exit the app")
 print("\n----------------------------------------------------------------------\n")
 
-# I developed it for Fedora. It works running different kernels from 5.3 to 5.6 latest on fedora 32.
+## I developed it for Fedora. 
 
 def backlightfunction():
     os.system('sudo sh -c "echo 10 >/sys/class/backlight/intel_backlight/brightness"')
@@ -86,5 +86,5 @@ while loop:  ## While loop which will keep going until loop = False
         loop = false
 
     else:
-        # Any integer inputs other than values 1-5 we print an error message
+        # Any integer inputs other than values 1-9 we print an error message
         raw_input("Wrong option selection. Enter any key to try again..")
