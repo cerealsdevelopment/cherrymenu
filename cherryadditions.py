@@ -1,9 +1,9 @@
 import sys
 import os
 ## Menu
-print("\n  ========_________________________!!!!!!!!!!!!!!!__________________========\n")
-print("\n	                     _=! Cherry Trail Menu !=_\n")
-print("                        Happily brought to you by the Cereals Development\n")
+print("\n========_________________________!!!!!!!!!!!!!!!_________________________========\n")
+print("\n_=! Cherry Trail Menu !=_\n")
+print("Happily brought to you by the Cereals Development\n")
 print("\n ------ Set the Correct Brightness: ------\n")
 print("1. Set at 10%")
 print("2. Set at 25%")
