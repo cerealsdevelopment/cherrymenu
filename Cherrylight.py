@@ -1,6 +1,6 @@
 import sys
 import os
-# Main Routine
+# Main Menu
 def menua():
     print("\n  ========_________________________!!!!!!!!!!!!!!!__________________========\n")
     print("\n	                     _=! Cherry Trail Menu !=_\n")
@@ -15,7 +15,7 @@ def menua():
     print("4. Force shutdown")
     print("5. Exit the app")
     print("\n----------------------------------------------------------------------\n")
-
+# Submenu for brightness control
 def menubrightness():
     print("\n ------ Input the Brightness------\n")
     print("1. Set at 10%")
@@ -24,7 +24,7 @@ def menubrightness():
     print("4. Set at 75%")
     print("5. Set at 100%")
     print("6. Go back Main Menu\n")
-
+# Brightness temporary setup
 def backlightfunction():
     os.system('sudo sh -c "echo 10 >/sys/class/backlight/intel_backlight/brightness"')
 def backlightfunction1():
@@ -45,19 +45,19 @@ def dnfupdatenokernel():
 def hellshutdown():
     os.system('shutdown -h now')
 
-## Text menu in Python
+## Launch main menu
 
 menua()
 loop = True
 
-while loop:  ## main loop
+while loop:  ## main loop 
     choice = input("Enter your choice [1-5]: ")
     choice = int(choice)
 
     if choice == 1:
         print("\n--- Set Brightness: ---\n")
-        menubrightness()
-        loop1 = True
+        menubrightness() # loads submenu
+        loop1 = True # generates a new loop
 
         while loop1:  ## While loop for the submenu of Brightness
 
@@ -86,7 +86,7 @@ while loop:  ## main loop
             if choice1 == 6:
                 print("\nLet's go back to the previous menu%\n")
                 menua()
-                break
+                break # breaks loop1 menu
         else:
             break
 
