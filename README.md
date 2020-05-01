@@ -20,4 +20,4 @@ I developed this simple python scripts because Cherry Trail devices always do no
   - Set Brightness
   - Update the system without upgrading kernel (ie Kernel 5.6.6 brought more frequent freezes and reboots than previous kernels. Until 5.7 is released the 5.3.7 works well, the worst issue encountered so far is the random inability to power on after a suspend)
   - Reboot, shutdown
-  - If you press 9, you terminate the script
+
